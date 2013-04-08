@@ -6,7 +6,6 @@
  * - Toggle
  * - Accordion
  * - Contact Form
- * - Google Map
  *
  * Copyright 2011, MTD
  * http://themeforest.net/user/MTD
@@ -425,59 +424,6 @@
 				return false;		
 			});
 	
-		},
-		
-		// --- -- - GOOGLE MAP PLUGIN - -- --- //
-		elegant_GoogleMap	: function(){
-			
-			if( $(this).length ){
-				$.elegant_GoogleMap_Maps	= $(this);
-				$.getScript("http://maps.google.com/maps/api/js?sensor=false&callback=jQuery.fn.elegant_GoogleMap_CallBack&async=2");
-			}
-		},
-		elegant_GoogleMap_CallBack	: function(){
-		
-			$.elegant_GoogleMap_Maps.each(function(){
-		
-				var map			= $(this),
-					details		= $(this).find(".mapDetails").html(),
-					latitude	= map.data("latitude"),
-					longitude	= map.data("longitude"),
-					coord		= new google.maps.LatLng( latitude, longitude ),
-					param		= {
-						zoom				: map.data("zoom") || 6,
-						zoomControlOptions	: {
-							style: google.maps.ZoomControlStyle.SMALL
-						},
-						panControl			: false,
-						streetViewControl	: false,
-						center				: coord,
-						html				: map.data("title"),
-						popup				: true,
-						mapTypeId			: google.maps.MapTypeId.ROADMAP
-					},
-					gmap		= new google.maps.Map( map.get(0), param ),
-					bubble		= new google.maps.InfoWindow({
-						content		: details,
-						maxWidth	: 400
-					}),
-					icon		= new google.maps.MarkerImage("img/map-marker.png",
-						new google.maps.Size(130,127),
-						new google.maps.Point(0,0),
-						new google.maps.Point(65,120)
-					),
-					marker		= new google.maps.Marker({
-						position	: coord,
-						map			: gmap,
-						icon		: icon,
-						flat		: true,
-						title		: map.data("title")
-					});
-				google.maps.event.addListener(marker, "click", function () {
-					bubble.open(gmap, marker);
-				});
-			
-			});
 		}
 	
 	});
@@ -508,10 +454,6 @@ jQuery(document).ready(function($){
 			
 			// Initialize the toggle widgets
 			$(".toggle").elegant_Toggle();
-			
-			
-			// Load the Google Map using latitude and longitude values
-			$(".googleMap").elegant_GoogleMap();
 			
 		},
 		
