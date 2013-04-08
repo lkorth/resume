@@ -1,7 +1,6 @@
 /*
  * jQuery Plugins:
  *
- * - Twitter Widget
  * - Toggle
  * - Accordion
  * - Contact Form

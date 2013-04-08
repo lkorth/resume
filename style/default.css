@@ -372,10 +372,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endCo
 	height:21px;
 }
 
-.twitter_icon {
-	background:url(../images/twitter.png) no-repeat;
-}
-
 .locate_icon {
 	background:url(../images/locate.png) no-repeat;
 }
@@ -427,10 +423,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endCo
 
 .my_best_work {
 	width:270px;
-	padding:25px 0px 25px 0px;
-}
-
-.twitter_feed {
 	padding:25px 0px 25px 0px;
 }
 

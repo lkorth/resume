@@ -225,12 +225,6 @@ body{color:#000 !important;}
 		background:url(../images/skype.png) no-repeat; height:21px;}
 
 
-.twitter_icon{
-		
-		background:url(../images/twitter.png) no-repeat;}
-
-
-
 .locate_icon{
 		
 		background:url(../images/locate.png) no-repeat;}
@@ -301,8 +295,6 @@ body{color:#000 !important;}
 		padding:25px 0px 25px 0px;
 
 }
-
-.twitter_feed{padding:25px 0px 25px 0px;}
 
 .tag{
 		width:60px;
@@ -431,5 +423,5 @@ color:#545454;
 		
 	
 		
-#twitter_section, #selected-works{display:none;}
+#selected-works{display:none;}
 #popupContact,#eg-demo-nav-menu,.demobar,#demo-side-bar{display:none;}
