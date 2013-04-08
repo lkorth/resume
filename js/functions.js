@@ -2,7 +2,6 @@
  * jQuery Plugins:
  *
  * - Twitter Widget
- * - Testimonial Widget
  * - Toggle
  * - Accordion
  * - Contact Form
@@ -12,132 +11,7 @@
  */
 (function($){
 	$.fn.extend({
-		
-		// --- -- - TESTIMONIAL WIDGET PLUGIN - -- --- //
-		elegant_TestimonialWidget	: function(){
-		
-			function showNext(el, utils){
-				utils.isReady		= false;
-				el.nextTestimonial	= el.testimonialList.find('li').eq( utils.nextIndex );
-				
-				// Hide current Testimonial
-				el.currentTestimonial.fadeOut( 200, function(){
-					$(this).removeClass("current");
-					// Show next Testimonial
-					el.nextTestimonial.fadeIn( 200, function(){
-						$(this).addClass("current");
-						utils.currentIndex		= utils.nextIndex;
-						el.currentTestimonial	= el.nextTestimonial;
-						utils.callback();
-						utils.isReady	= true;
-					});
-					el.testimonialAuthor.html( el.nextTestimonial.find("cite").html() );
-				});
-			}
-			
-			return this.each(function(){
-				
-				var el		= {
-						widget				: $(this),
-						testimonialList		: $(this).find(".testimonialList"),
-						arrowLeft			: $(this).find(".arrowLeft"),
-						arrowRight			: $(this).find(".arrowRight"),
-						testimonialAuthor	: $(this).find(".testimonialAuthor")
-					},
-					utils	= {
-						testimonialNum	: el.testimonialList.find('li').length,
-						currentIndex	: 0,
-						callback		: function(){},
-						isReady			: false,
-						width			: 0,
-						height			: 0,
-						outerHeight		: 0
-					}
-				el.currentTestimonial	= el.testimonialList.find('li').eq(0);				
-				
-				// Calculate the max height
-				el.testimonialList.find("li").each(function(){
-					$(this).css({
-						opacity	: 0,
-						display	: "block"
-					});
-					if( $(this).outerHeight(true) > utils.outerHeight ){
-						utils.outerHeight = $(this).outerHeight(true);
-						
-					}
-					$(this).css({
-						opacity	: 1,
-						display	: "none"
-					});
-				});
-				
-				// Set the new height
-				el.testimonialList.find("li").each(function(){
-					$(this).css({
-						height	: utils.height
-					});
-				});
-				el.testimonialList.css({
-					height	: utils.outerHeight
-				});
-				
-				// Set the first Testimonial as current
-				el.currentTestimonial.fadeIn(300, function(){
-					$(this).addClass("current");
-				});
-				el.testimonialAuthor.html(
-					el.currentTestimonial.find("cite").html()
-				);
-				
-				// Check for inactive arrows
-				el.arrowLeft.addClass("inactive");
-				if( utils.testimonialNum === 1 ){
-					el.arrowRight.addClass("inactive");
-				}
-				
-				// Add click event on the LEFT arrow
-				el.arrowLeft.click(function(){
-					if( !$(this).hasClass("inactive") && utils.isReady ){
-						utils.nextIndex	= utils.currentIndex - 1;
-						if( utils.nextIndex === 0 ){
-							utils.callback	= function(){
-								el.arrowLeft.addClass("inactive");
-							};
-						}else{
-							utils.callback	= function(){
-								el.arrowRight.removeClass("inactive");
-							};
-						}
-						showNext(el, utils);
-					}
-					return false;
-				});
-				
-				// Add click event on the RIGHT arrow
-				el.arrowRight.click(function(){
-					if( !$(this).hasClass("inactive") && utils.isReady ){
-						utils.nextIndex	= utils.currentIndex + 1;
-						if( utils.nextIndex === utils.testimonialNum -1 ){
-							utils.callback	= function(){
-								el.arrowRight.addClass("inactive");
-							};
-						}else{
-							utils.callback	= function(){
-								el.arrowLeft.removeClass("inactive");
-							};
-						}
-						showNext(el, utils);
-					}
-					return false;
-				});
-				
-				utils.isReady = true;
-			
-			});
-	
 
-		},
-		
 		// --- -- - TOGGLE PLUGIN - -- --- //
 		elegant_Toggle	: function(){
 			
@@ -293,8 +167,6 @@ jQuery(document).ready(function($){
 			this.placeHolder();
 			
 			this.topPanel();
-			// Initialize the testimonial widgets
-			$(".testimonialWidget").elegant_TestimonialWidget();
 			
 			// Initialize the toggle widgets
 			$(".toggle").elegant_Toggle();
