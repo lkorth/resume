@@ -132,13 +132,6 @@ p {
 .msg_icon {
 	background:url(../images/msg-white.png) no-repeat;
 }
-.skype_icon {
-	background:url(../images/skype-white.png) no-repeat;
-	height:21px;
-}
-.locate_icon {
-	background:url(../images/locate-white.png) no-repeat;
-}
 
 .pdf_icon {
 	background:url(../images/pdf-white.png) no-repeat;
