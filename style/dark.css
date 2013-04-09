@@ -56,22 +56,22 @@ h6 {
 
 @font-face {
 	font-family:"Humnst777 Blk BT";
-	src: url(Hum777k.ttf);
+	src: url(../font/Hum777k.ttf);
 }
 
 @font-face {
 	font-family:"Humnst777 BT";
-	src: url(Hum777Bd.ttf);
+	src: url(../font/Hum777Bd.ttf);
 }
 
 @font-face {
 	font-family:"Freehand575 BT";
-	src: url(Freeh575.ttf);
+	src: url(../font/Freeh575.ttf);
 }
 
 @font-face {
 	font-family:"Glowworm";
-	src: url(GLOWWORM.ttf);
+	src: url(../font/GLOWWORM.ttf);
 }
 
 /*========================*/
