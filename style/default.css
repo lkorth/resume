@@ -354,8 +354,11 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endCo
 	list-style:none;
 	line-height:18px;
 	font-size:12px;
-	padding-left:30px;
 	margin-bottom:12px;
+}
+
+.contact_Info_items ul li a {
+    padding-left: 15px;
 }
 
 .web_icon {
