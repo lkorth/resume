@@ -64,16 +64,6 @@ h6 {
 	src: url(../font/Hum777Bd.ttf);
 }
 
-@font-face {
-	font-family:"Freehand575 BT";
-	src: url(../font/Freeh575.ttf);
-}
-
-@font-face {
-	font-family:"Glowworm";
-	src: url(../font/GLOWWORM.ttf);
-}
-
 /*========================*/
 /*===  2. Header    ===*/
 /*========================*/
