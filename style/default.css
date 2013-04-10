@@ -282,19 +282,6 @@ li {
     padding-left: 15px;
 }
 
-.web_icon {
-	background:url(../images/website.png) no-repeat;
-	height:21px;
-}
-
-.msg_icon {
-	background:url(../images/msg.png) no-repeat;
-}
-
-.pdf_icon {
-	background:url(../images/pdf.png) no-repeat;
-}
-
 .education_items {
 	width:100%;
 	float:left;
