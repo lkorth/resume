@@ -310,9 +310,6 @@ li {
 	list-style:none;
 }
 
-.languages {
-}
-
 .references {
 	width:100%;
 	padding:25px 0px 25px 0px;
@@ -370,7 +367,6 @@ li {
   	 height: 40px;
     padding: 10px 20px 10px 60px;
 	width:600px;
- 
 }
 
 .education_items h6, .references h6 {
