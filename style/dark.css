@@ -22,14 +22,14 @@ body {
 }
 
 a {
-	color:#ffb09e;
+	color:#718C44;
 }
 h1 {
 	color:#ffffff;
 	font-family:"Humnst777 Blk BT";
 }
 h2 {
-	color:#c46651;
+	color:#425430;
 	font-family:"Humnst777 BT";
 }
 h3 {
@@ -42,7 +42,7 @@ h4 {
 	font-weight:normal;
 }
 h5 {
-	color:#f2cf9a;
+	color:#80C465;
 	font-weight:normal;
 	text-shadow: 1px -1px 1px black;
 	font-family: Helvetica, sans-serif;
@@ -79,7 +79,7 @@ h6 {
 }
 
 #topPanelHandle {
-	background-color:#C46651 !important;
+	background-color:#425430 !important;
 }
 
 
