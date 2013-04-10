@@ -297,6 +297,14 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endCo
 	padding:25px 0px 25px 0px;
 }
 
+.points {
+    padding-left: 15px;
+}
+
+.points li {
+    list-style: circle;
+}
+
 .portfolio_item {
 	width:100%;
 	float:left;
