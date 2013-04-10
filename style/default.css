@@ -37,6 +37,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /*===  2. Common       ===*/
 /*========================*/
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#100c00;
+    background: #3b3c3e url(../images/bg-pattern.jpg);
+    color:#fff;
+}
 
 #wrapper {
 	width:850px;
@@ -49,10 +55,11 @@ img {
 }
 
 p {
-	font-size:12px;
 	width:90%;
-	text-align:justify;
-	line-height:20px;
+    font-size:11px;
+    text-align:justify;
+    line-height:20px;
+    padding:0;
 }
 
 h1 {
@@ -60,6 +67,8 @@ h1 {
 	text-align:left;
 	float:left;
 	font-weight:bold;
+    color:#ffffff;
+    font-family:"Humnst777 Blk BT";
 }
 
 h2 {
@@ -67,6 +76,8 @@ h2 {
 	text-align:left;
 	font-weight:bold;
 	line-height:50px;
+    color:#425430;
+    font-family:"Humnst777 BT";
 }
 
 h3 {
@@ -74,20 +85,29 @@ h3 {
 	text-align:left;
 	line-height:25px;
 	font-weight:bold;
+    color:#ffffff;
+    font-family: Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px black;
 }
 
 h4 {
 	font-size:14px;
 	text-align:left;
 	line-height:22px;
+    color:#CC333F;
+    font-weight:normal;
 }
 
 h5 {
 	font-size:18px;
 	text-align:left;
 	line-height:35px;
-	font-weight:bold;
 	text-indent:0px;
+    color:#80C465;
+    font-weight:normal;
+    text-shadow: 1px -1px 1px black;
+    font-family: Helvetica, sans-serif;
+    font-weight:normal;
 }
 
 h6 {
@@ -96,21 +116,28 @@ h6 {
 	line-height:22px;
 	padding:0;
 	margin:0;
+    font-family:Tahoma, Geneva, sans-serif;
+    color:#a4a4a4;
+    font-weight:normal;
 }
 
 a {
-	text-decoration:none;
+    color:#718C44;
+    text-decoration:none;
 }
 
 a:hover {
 	text-decoration:underline;
 }
 
-p {
-	font-size:11px;
-	text-align:justify;
-	line-height:20px;
-	padding:0;
+@font-face {
+    font-family:"Humnst777 Blk BT";
+    src: url(../font/Hum777k.ttf);
+}
+
+@font-face {
+    font-family:"Humnst777 BT";
+    src: url(../font/Hum777Bd.ttf);
 }
 
 ul {
@@ -144,6 +171,7 @@ li {
 	height:149px;
 	margin:0 auto;
 	line-height:35px;
+    background-image:url(../images/bg-header.png);
 }
 
 .headerwrapper {
@@ -473,6 +501,19 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endCo
  
 }
 
+.education_items h6, .references h6 {
+    color:#fff;
+}
+li {
+    font-family:Tahoma, Geneva, sans-serif;
+}
+p {
+    font-family:Tahoma, Geneva, sans-serif;
+}
+.year {
+    color:#a4a4a4;
+}
 
-
-
+#fivehundredpx {
+    background-color: #444;
+}
