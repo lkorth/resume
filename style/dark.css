@@ -100,34 +100,6 @@ p {
 	color:#a4a4a4;
 }
 
-
-
-.tag {
-	color:#fff;
-	
-	font-family:Tahoma, Geneva, sans-serif;
-	background:url(../images/tag-orange.png) no-repeat !important;
-}
-
-.winner_tag {
-	color:#FFF;
-	font-family:Tahoma, Geneva, sans-serif;
-	background:url(../images/winner-orange.png) no-repeat !important;
-}
-
-.web_icon {
-	background:url(../images/website-white.png) no-repeat;
-	height:21px;
-}
-.msg_icon {
-	background:url(../images/msg-white.png) no-repeat;
-}
-
-.pdf_icon {
-	background:url(../images/pdf-white.png) no-repeat;
-}
-
-
 #fivehundredpx {
     background-color: #444;
 }
