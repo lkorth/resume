@@ -195,7 +195,6 @@ header {
 #main {
 	width:475px;
 	float:left;
-	/* Change Float:left to Float:right for layout 2 */
 }
 
 .section {
