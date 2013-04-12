@@ -222,6 +222,9 @@ body{color:#000 !important;}
 		
 	
 .msg_icon{
+.contact_Info_items ul li a {
+    padding-left: 15px;
+}
 		
 		background:url(../images/msg.png) no-repeat;}
 
