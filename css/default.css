@@ -383,3 +383,7 @@ p {
 #fivehundredpx {
     background-color: #444;
 }
+
+#text-link {
+    display:none;
+}

@@ -398,7 +398,15 @@ color:#545454;
 		color:#545454;
 		font-family:Tahoma, Geneva, sans-serif;
 		
-		}			
+		}
+
+#download-link {
+    display:none;
+}
+
+#text-link {
+    display:block;
+}
 		
 
 		
