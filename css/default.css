@@ -89,14 +89,6 @@ h3 {
     text-shadow: 1px 1px 1px black;
 }
 
-h4 {
-	font-size:14px;
-	text-align:left;
-	line-height:22px;
-    color:#CC333F;
-    font-weight:normal;
-}
-
 h5 {
 	font-size:18px;
 	text-align:left;
@@ -217,36 +209,11 @@ header {
     list-style: circle;
 }
 
-.portfolio_item {
-	width:100%;
-	float:left;
-	padding:25px 0px 25px 0px;
-}
-
 .year {
 	font-size:12px;
 	text-align:left;
 	float:right;
 	padding-top:6px;
-}
-
-.tag {
-	width:60px;
-	height:21px;
-	line-height:22px;
-	float:right;
-	font-size:9px;
-	text-align:center;
-}
-
-.winner_tag {
-	width:55px;
-	height:21px;
-	line-height:21px;
-	float:right;
-	font-size:10px;
-	text-indent:14px;
-	text-align:center;
 }
 
 /*===========================*/
@@ -308,11 +275,6 @@ header {
 	list-style:none;
 }
 
-.references {
-	width:100%;
-	padding:25px 0px 25px 0px;
-}
-
 .award {
 	width:100%;
 	padding:25px 0px 25px 0px;
@@ -323,48 +285,12 @@ header {
 	padding:25px 0px 25px 0px;
 }
 
-.best_work_gallery {
-	width:76px;
-	height:76px;
-	float:left;
-	margin:0px 16px 16px 0px;
-}
-
 .gallery li {
 	display:inline;
 }
 
 .gallery li {
 	padding-right:10px;
-}
-
-.gallery li.ast {
-	padding-right:0px;
-}
-
-/* Email Notification */
-
-
-.success {
-	font-family:Tahoma, Arial; font-size:12px;
-
-	position:absolute;
-	margin:30px 0px 0px 400px;
-  
-   background-color: #ECFFAA;
-    background-image: url("../images/accept.png");
-    background-position: 15px center;
-    background-repeat: no-repeat;
-    border: 2px solid #99C600;
-	
-	border-radius: 4px 4px 4px 4px;
-    clear: both;
-    cursor: pointer;
-  
-    line-height: 40px;
-  	 height: 40px;
-    padding: 10px 20px 10px 60px;
-	width:600px;
 }
 
 .education_items h6, .references h6 {
