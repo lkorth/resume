@@ -227,12 +227,12 @@ h6 {
     color: #414143
 }
 
-#download-link {
+.website {
     display: none;
 }
 
-#text-link {
-    display: block;
+.printed {
+    display: inline;
 }
 
 #selected-works {
