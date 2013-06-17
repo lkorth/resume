@@ -35,10 +35,11 @@ img {
 }
 
 p {
-    font-size: 12px;
+    font-size: 11px;
     width: 90%;
     text-align: justify;
     line-height: 20px;
+    padding: 0;
 }
 
 h1 {
@@ -56,6 +57,7 @@ h2 {
 }
 
 h3 {
+    font-family: Helvetica, sans-serif;
     font-size: 20px;
     text-align: left;
     line-height: 25px;
@@ -76,12 +78,11 @@ h6 {
     line-height: 22px;
     padding: 0;
     margin: 0;
+    color: #545454;
 }
 
-p {
-    font-size: 11px;
-    line-height: 20px;
-    padding: 0;
+a {
+    color: #000;
 }
 
 ul {
@@ -95,10 +96,6 @@ li {
     margin-bottom: 9px;
 }
 
-body {
-    color: #000 !important;
-}
-
 .clearfix {
     visibility: hidden;
     clear: both;
@@ -110,6 +107,7 @@ body {
     text-align: left;
     float: right;
     padding-top: 6px;
+    color: #545454;
 }
 
 .headerwrapper {
@@ -201,22 +199,6 @@ body {
 
 #activities {
     padding-top: 20px;
-}
-
-a {
-    color: #000;
-}
-
-h3 {
-    font-family: Helvetica, sans-serif;
-}
-
-h6 {
-    color: #545454;
-}
-
-.year {
-    color: #545454;
 }
 
 .education_items h6, .references h6 {
