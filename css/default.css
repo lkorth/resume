@@ -1,25 +1,11 @@
-/*
-
-CSS File TOC
-------------------------
-
-1. CSS Reset
-2. Common
-3. Header
-4. Contents
-   4.1  Main Panel
-   4.2  Sidebar Panel
-
-*/
-
-
-
-/*========================*/
-/*===  1. CSS Reset    ===*/
-/*========================*/
-
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del,
+dfn, em, font, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -31,11 +17,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 }
 
-
-/*========================*/
-/*===  2. Common       ===*/
-/*========================*/
-
+/* Common Elements */
 body {
     font-family: Arial, Helvetica, sans-serif;
     color:#100c00;
@@ -54,6 +36,7 @@ img {
 }
 
 p {
+    font-family:Tahoma, Geneva, sans-serif;
 	width:90%;
     font-size:11px;
     text-align:justify;
@@ -136,12 +119,12 @@ ul {
 }
 
 li {
+    font-family:Tahoma, Geneva, sans-serif;
 	list-style:none;
 	line-height:18px;
 	font-size:11px;
 	margin-bottom:9px;
 }
-
 
 .clearfix {
 	visibility:hidden;
@@ -153,10 +136,11 @@ li {
 	font-weight:bold;
 }
 
-/*========================*/
-/*===  3. Header       ===*/
-/*========================*/
+.printed {
+    display:none;
+}
 
+/* Header */
 header {
 	width:100%;
 	height:149px;
@@ -174,11 +158,7 @@ header {
 	margin:0 auto;
 }
 
-/*===========================*/
-/*===  4. Contents        ===*/
-/*===  4.1 Main Panel     ===*/
-/*===========================*/
-
+/* Main Contents */
 #contents {
 	width:100%;
 	padding: 50px 0px 70px 0px;
@@ -214,12 +194,10 @@ header {
 	text-align:left;
 	float:right;
 	padding-top:6px;
+    color:#a4a4a4;
 }
 
-/*===========================*/
-/*===  4.2 Sidebar Panel  ===*/
-/*===========================*/
-
+/* Sidebar */
 #sidebar {
 	width:260px;
 	float:left;
@@ -296,20 +274,7 @@ header {
 .education_items h6, .references h6 {
     color:#fff;
 }
-li {
-    font-family:Tahoma, Geneva, sans-serif;
-}
-p {
-    font-family:Tahoma, Geneva, sans-serif;
-}
-.year {
-    color:#a4a4a4;
-}
 
 #fivehundredpx {
     background-color: #444;
-}
-
-.printed {
-    display:none;
 }
