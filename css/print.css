@@ -151,18 +151,19 @@ li {
 
 .contact_Info_items ul li a {
     padding-left: 15px;
+    padding-top: 15px;
 }
 
 .education_items {
     width: 100%;
     float: left;
-    padding: 25px 0px 25px 0px;
+    padding: 15px 0px 25px 0px;
 }
 
 .skills {
     float: left;
     width: 130px;
-    padding: 25px 0px 25px 0px;
+    padding: 15px 0px 25px 0px;
 }
 
 .skills ul {
@@ -182,13 +183,7 @@ li {
 
 .award {
     width: 100%;
-    padding: 25px 0px 25px 0px;
-}
-
-.my_best_work {
-    width: 270px;
-    padding: 25px 0px 25px 0px;
-
+    padding: 15px 0px 25px 0px;
 }
 
 #sidebar {
@@ -198,7 +193,7 @@ li {
 }
 
 #activities {
-    padding-top: 20px;
+    padding-top: 33px;
 }
 
 .education_items h6, .references h6 {
