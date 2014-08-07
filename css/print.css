@@ -193,7 +193,7 @@ li {
 }
 
 #activities {
-    padding-top: 33px;
+    padding-top: 35px;
 }
 
 .education_items h6, .references h6 {
@@ -214,8 +214,4 @@ li {
 
 #selected-works {
     display: none;
-}
-
-#page2 {
-    padding-top: 60px;
 }
