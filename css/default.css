@@ -44,6 +44,10 @@ p {
     padding:0;
 }
 
+.medium_text {
+  font-size: 13px;
+}
+
 h1 {
 	font-size:50px;
 	text-align:left;
@@ -173,6 +177,10 @@ header {
 	width:100%;
 	float:left;
 	padding:0px 0px 0px 0px;
+}
+
+.tldr {
+  padding-bottom: 30px;
 }
 
 .work_item {
