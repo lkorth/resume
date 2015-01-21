@@ -51,7 +51,7 @@
           <h5>Work Experience</h5>
 
           {% for item in site.data.experience %}
-            {% include work-item.html %}
+          {% include work-item.html %}
           {% endfor %}
 
         </div>
@@ -60,7 +60,7 @@
           <h5>Freelance</h5>
 
           {% for item in site.data.freelance %}
-            {% include work-item.html %}
+          {% include work-item.html %}
           {% endfor %}
 
         </div>
@@ -73,10 +73,10 @@
         <div class="contact_Info_items">
           <ul>
             {% for item in site.data.contact %}
-              <li {% if item.type != null %}class="{{ item.type }}"{% endif %}>
-                <i class="{{ item.icon }}"></i>
-                <a {% if item.event != null %}onClick="{{ item.event }}"{% endif %} href="{{ item.link }}">{{ item.text }}</a>
-              </li>
+            <li {% if item.type != null %}class="{{ item.type }}"{% endif %}>
+            <i class="{{ item.icon }}"></i>
+            <a {% if item.event != null %}onClick="{{ item.event }}"{% endif %} href="{{ item.link }}">{{ item.text }}</a>
+            </li>
             {% endfor %}
           </ul>
         </div>
@@ -86,13 +86,13 @@
         <h5>Education</h5>
 
         {% for item in site.data.education %}
-          <div class="education_items">
-            <h6 class="bold">{{ item.title }}</h6>
-            <p>{{ item.org }}</p>
-            <p>{{ item.date }}</p>
-            <p>{{ item.gpa }}</p>
-            <p>{{ item.info }}</p>
-          </div>
+        <div class="education_items">
+          <h6 class="bold">{{ item.title }}</h6>
+          <p>{{ item.org }}</p>
+          <p>{{ item.date }}</p>
+          <p>{{ item.gpa }}</p>
+          <p>{{ item.info }}</p>
+        </div>
         {% endfor %}
       </div>
 
@@ -104,18 +104,18 @@
         <div class="skills">
           <ul>
             {% for skill in site.data.skills %}
-              {% if forloop.index <= forloop.rindex %}
-                <li>{{ skill }}</li>
-              {% endif %}
+            {% if forloop.index <= forloop.rindex %}
+            <li>{{ skill }}</li>
+            {% endif %}
             {% endfor %}
           </ul>
         </div>
         <div class="skills">
           <ul>
             {% for skill in site.data.skills %}
-              {% if forloop.index > forloop.rindex %}
-                <li>{{ skill }}</li>
-              {% endif %}
+            {% if forloop.index > forloop.rindex %}
+            <li>{{ skill }}</li>
+            {% endif %}
             {% endfor %}
           </ul>
         </div>
@@ -129,7 +129,7 @@
         <div class="award">
           <ul>
             {% for award in site.data.awards %}
-              <li title="{{ award.year }}">{{ award.name }}</li>
+            <li title="{{ award.year }}">{{ award.name }}</li>
             {% endfor %}
           </ul>
         </div>
@@ -141,7 +141,7 @@
         <div class="award">
           <ul>
             {% for activity in site.data.activities %}
-              <li title="{{ activity.year }}">{{ activity.name }}</li>
+            <li title="{{ activity.year }}">{{ activity.name }}</li>
             {% endfor %}
           </ul>
         </div>
@@ -155,17 +155,17 @@
         <div class="my_best_work">
           <ul class="gallery">
             {% for photo in site.data.photography %}
-              <li>
-                <a href="{{ photo.link }}" rel="gallery">
-                  <img width="76" height="76" src="{{ photo.link }}" alt="{{ photo.alt }}" />
-                </a>
-              </li>
+            <li>
+            <a href="{{ photo.link }}" rel="gallery">
+              <img width="76" height="76" src="{{ photo.link }}" alt="{{ photo.alt }}" />
+            </a>
+            </li>
             {% endfor %}
 
             <li>
-              <a target="_blank" href="http://500px.com/LukeKorth" alt="Link to 500px profile">
-                <img width="76" height="76" id="fivehundredpx" src="images/500px.png"/>
-              </a>
+            <a target="_blank" href="http://500px.com/LukeKorth" alt="Link to 500px profile">
+              <img width="76" height="76" id="fivehundredpx" src="images/500px.png"/>
+            </a>
             </li>
 
           </ul>
