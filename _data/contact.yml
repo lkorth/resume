@@ -1,0 +1,47 @@
+- icon: icon-phone icon-large
+  event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'phone']);
+  link: tel:+19203580434
+  text: (920)358-0434
+
+- icon: icon-mail-alt icon-large
+  event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'email']);
+  link: mailto:luke+resume@lukekorth.com
+  text: luke+resume@lukekorth.com
+
+- icon: icon-link icon-large
+  event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'website']);
+  link: http://lukekorth.com
+  text: lukekorth.com
+
+- icon: icon-github-circled icon-large
+  type: website
+  event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'GitHub']);
+  link: https://github.com/lkorth
+  text: GitHub
+
+- icon: icon-github-circled icon-large
+  type: printed
+  link: https://github.com/lkorth
+  text: github.com/lkorth
+
+- icon: icon-linkedin-squared icon-large
+  type: website
+  event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'LinkedIn']);
+  link: http://www.linkedin.com/in/lukekorth/
+  text: LinkedIn
+
+- icon: icon-linkedin-squared icon-large
+  type: printed
+  link: http://www.linkedin.com/in/lukekorth/
+  text: linkedin.com/in/lukekorth
+
+- icon: icon-download icon-large
+  type: website
+  event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'download resume']);
+  link: resume.pdf
+  text: download resume
+
+- icon: icon-desktop icon-large
+  type: printed
+  link: http://lukekorth.com/resume
+  text: View online at lukekorth.com/resume

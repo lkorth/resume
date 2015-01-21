@@ -208,7 +208,7 @@ li {
 }
 
 .printed {
-  display: inline;
+  display: list-item;
 }
 
 #selected-works {

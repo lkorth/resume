@@ -1,0 +1,19 @@
+<div class="work_item">
+  <div class="year">{{ item.date }}</div>
+  <h3>{{ item.title }}</h3>
+  {% if item.subtitle != null and item.link != null %}
+  <h6>{{ item.subtitle }}, <a target="_blank" href="{{ item.link }}">{{ item.link }}</a></h6>
+  <br>
+  {% elsif item.subtitle != null %}
+  <h6>{{ item.subtitle }}</h6>
+  <br>
+  {% elsif item.link != null %}
+  <h6><a target="_blank" href="{{ item.link }}">{{ item.link }}</a></h6>
+  <br>
+  {% endif %}
+  <ul class="points">
+    {% for bullet in item.bullets %}
+    <li>{{ bullet }}</li>
+    {% endfor %}
+  </ul>
+</div>

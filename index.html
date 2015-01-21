@@ -1,10 +1,12 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>Luke Korth</title>
+    <title>{{ site.name }}</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <meta name="robots" content="index,follow"/>
@@ -31,7 +33,7 @@
 
     <header>
     <div class="headerwrapper">
-      <h1>Luke Korth</h1>
+      <h1>{{ site.name }}</h1>
       <div class="clearfix"></div>
       <h2>Mobile and Web Application Engineer</h2>
     </div>
@@ -41,119 +43,26 @@
       <section id="contents">
       <div id="main">
         <div class="section tldr">
-          <h5>TL;DR</h5>
-          <p class="medium_text">
-          I'm a passionate developer with a love for Android and all things Web. I have a keen eye for performance and
-          security, enjoy creating new things that have never been done before and pushing the limits of what is possible.
-          To see some of the work I'm most proud of, check out my Android apps at <a href="http://lukekorth.com/apps">lukekorth.com/apps</a>.
-          </p>
+          <h5>{{ site.data.preface[0].title }}</h5>
+          <p class="medium_text">{{ site.data.preface[0].text }}</p>
         </div>
 
         <div class="section">
           <h5>Work Experience</h5>
 
-          <div class="work_item">
-            <div class="year">7/2013 - present</div>
-            <h3>Braintree (acquired by PayPal 12/2013)</h3>
-            <h6><a target="_blank" href="https://www.braintreepayments.com/">https://www.braintreepayments.com/</a></h6>
-            <br>
-            <ul class="points">
-              <li>Developed a new Android SDK from the ground up</li>
-              <li>Supported a public API and client libraries across many languages</li>
-              <li>Worked on backend integrations with third parties and payment processors</li>
-              <li>Learned pair programming and TDD</li>
-            </ul>
-          </div>
+          {% for item in site.data.experience %}
+            {% include work-item.html %}
+          {% endfor %}
 
-          <div class="work_item">
-            <div class="year">6/2012 - 7/2013</div>
-            <h3>The Center for Health Enhancement Systems Studies</h3>
-            <h6>research center, <a target="_blank" href="http://chess.wisc.edu">http://chess.wisc.edu</a></h6>
-            <br>
-            <ul class="points">
-              <li>Developed Android applications and RESTful APIs for grant funded research</li>
-              <li>Worked with the development team to implement use of Git and issue tracking</li>
-              <li>Increased the use of an open-source software stack to increase the sustainability of projects</li>
-            </ul>
-          </div>
-
-          <div class="work_item">
-            <div class="year">11/2011 - 12/2011</div>
-            <h3>J&P Cycles</h3>
-            <h6>e-commerce, <a target="_blank" href="http://jpcycles.com">http://jpcycles.com</a></h6>
-            <br/>
-            <ul class="points">
-              <li>Worked as an intern in a .NET Developer position in C#, an MVC framework and jQuery</li>
-              <li>Developed a new checkout process to simplify the website</li>
-              <li>Increased ease of use and conversion rate</li>
-              <li>Worked extensively on user testing of the finished product</li>
-              <li>Learned Git from the creator of
-              <a target="_blank" href="https://github.com/dahlbyk/posh-git">posh-git</a></li>
-            </ul>
-          </div>
-
-          <div class="work_item">
-            <div class="year">7/2011 - 8/2011</div>
-            <h3>Dartmouth College</h3>
-            <h6>information security</h6>
-            <br/>
-            <ul class="points">
-              <li>Worked for Peter Kiewit Computing Services</li>
-              <li>Developed a program to analyze VPN event logs and generate alerts
-              of suspicious activity based on geo-location techniques
-              </li>
-              <li>Analyzed network printers for security flaws</li>
-              <li>Worked on intrusion detection and prevention</li>
-              <li>Presented at Securing the eCampus 2011</li>
-              <li>Demonstrated an attack that had been made against Dartmouth using a flaw in PhpMyAdmin</li>
-            </ul>
-          </div>
-
-          <div class="work_item">
-            <div class="year">6/2011 - 7/2011</div>
-            <h3>SISMAT</h3>
-            <h6>computer security, <a target="_blank" href="http://www.ists.dartmouth.edu/events/sismat/">http://www.ists.dartmouth.edu/events/sismat</a>
-            </h6>
-            <br/>
-            <ul class="points">
-              <li>Worked together with other students under the oversight of a
-              professor to gain valuable knowledge and experience in computer
-              security
-              </li>
-              <li>Studied network security, intrusion detection, low level programming
-              and web application security
-              </li>
-              <li>Participated in attack and defend hacking scenarios</li>
-            </ul>
-          </div>
         </div>
 
         <div class="section">
           <h5>Freelance</h5>
 
-          <div class="work_item">
-            <div class="year">10/2011 - present</div>
-            <h3>Android Applications</h3>
-            <h6><a target="_blank" href="http://lukekorth.com/apps">http://lukekorth.com/apps</a></h6>
-            <br/>
-            <ul class="points">
-              <li>3 Android apps in Google Play</li>
-              <li>1400+ reviews with 4.3+ average star rating, 150,000+ downloads</li>
-              <li>Presented at Iowa Code Camp 2011 on C2DM</li>
-            </ul>
-          </div>
+          {% for item in site.data.freelance %}
+            {% include work-item.html %}
+          {% endfor %}
 
-          <div class="work_item">
-            <div class="year">12/2012 - 6/2013</div>
-            <h3>JanSport</h3>
-            <div class="clearfix"></div>
-            <h6>sales app, <a target="_blank" href="http://jansport.com/">http://jansport.com/</a></h6>
-            <br/>
-            <ul class="points">
-              <li>Designed and developed an iOS and Android application for sales reps</li>
-              <li>Worked with manager to define specifications and set goals for final product</li>
-            </ul>
-          </div>
         </div>
       </div>
 
@@ -163,23 +72,12 @@
 
         <div class="contact_Info_items">
           <ul>
-            <li><i class="icon-phone icon-large"></i><a onClick="_gaq.push(['_trackEvent', 'Link', 'Contact Info', 'phone']);" href="tel:+19203580434">(920)358-0434</a></li>
-            <li><i class="icon-mail-alt icon-large"></i><a onClick="_gaq.push(['_trackEvent', 'Link', 'Contact Info', 'email']);" href="mailto:luke+resume@lukekorth.com">luke+resume@lukekorth.com</a></li>
-            <li><i class="icon-link icon-large"></i><a onClick="_gaq.push(['_trackEvent', 'Link', 'Contact Info', 'website']);" href="http://lukekorth.com">lukekorth.com</a></li>
-            <li>
-            <i class="icon-github-circled icon-large"></i>
-            <a class="website" onClick="_gaq.push(['_trackEvent', 'Link', 'Contact Info', 'GitHub']);" href="https://github.com/lkorth">GitHub</a>
-            <a class="printed" href="https://github.com/lkorth">github.com/lkorth</a>
-            </li>
-            <li>
-            <i class="icon-linkedin-squared icon-large"></i>
-            <a class="website" onClick="_gaq.push(['_trackEvent', 'Link', 'Contact Info', 'LinkedIn']);" href="http://www.linkedin.com/in/lukekorth/">LinkedIn</a>
-            <a class="printed" href="http://www.linkedin.com/in/lukekorth/">linkedin.com/in/lukekorth</a>
-            </li>
-            <li>
-            <i class="icon-download icon-large website"></i><a class="website" onClick="_gaq.push(['_trackEvent', 'Link', 'Contact Info', 'download resume']);" href="resume.pdf">download resume</a>
-            <i class="icon-desktop icon-large printed"></i><a class="printed" href="http://lukekorth.com/resume">View online at lukekorth.com/resume</a>
-            </li>
+            {% for item in site.data.contact %}
+              <li {% if item.type != null %}class="{{ item.type }}"{% endif %}>
+                <i class="{{ item.icon }}"></i>
+                <a {% if item.event != null %}onClick="{{ item.event }}"{% endif %} href="{{ item.link }}">{{ item.text }}</a>
+              </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -187,13 +85,15 @@
       <div class="section">
         <h5>Education</h5>
 
-        <div class="education_items">
-          <h6 class="bold">Bachelor of Arts in Computer Science</h6>
-          <p>Cornell College</p>
-          <p>2008-2012</p>
-          <p>3.76 GPA</p>
-          <p>Magna Cum Laude</p>
-        </div>
+        {% for item in site.data.education %}
+          <div class="education_items">
+            <h6 class="bold">{{ item.title }}</h6>
+            <p>{{ item.org }}</p>
+            <p>{{ item.date }}</p>
+            <p>{{ item.gpa }}</p>
+            <p>{{ item.info }}</p>
+          </div>
+        {% endfor %}
       </div>
 
       <div class="clearfix"></div>
@@ -203,22 +103,20 @@
 
         <div class="skills">
           <ul>
-            <li>Java</li>
-            <li>Ruby</li>
-            <li>PHP</li>
-            <li>SQL</li>
-            <li>Unix</li>
-            <li>Linux Servers</li>
-            <li>Android</li>
+            {% for skill in site.data.skills %}
+              {% if forloop.index <= forloop.rindex %}
+                <li>{{ skill }}</li>
+              {% endif %}
+            {% endfor %}
           </ul>
         </div>
         <div class="skills">
           <ul>
-            <li>Testing</li>
-            <li>Automation</li>
-            <li>Git</li>
-            <li>Scaling</li>
-            <li>APIs</li>
+            {% for skill in site.data.skills %}
+              {% if forloop.index > forloop.rindex %}
+                <li>{{ skill }}</li>
+              {% endif %}
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -230,13 +128,9 @@
 
         <div class="award">
           <ul>
-            <li title="2008-2012">Cornell College Dean's List</li>
-            <li title="2008-2012">Cornell College Academic Trustee Scholarship Recipient</li>
-            <li title="2008-2012">Cornell College Grant Recipient</li>
-            <li title="2008-2012">VF Scholarship Recipient</li>
-            <li title="2010-2011">Iowa College Foundation Principal Financial Group Information Technology Scholarship Recipient</li>
-            <li title="2011">ACM ICPC Honorable Mention</li>
-            <li title="2012">Cornell College Senor Computer Science Student Achievement Award</li>
+            {% for award in site.data.awards %}
+              <li title="{{ award.year }}">{{ award.name }}</li>
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -246,16 +140,9 @@
 
         <div class="award">
           <ul>
-            <li title="2009-2013">Association of Computing Machinery Member</li>
-            <li title="2010-2012">Cornell College Computing Club Co-Founder and Webmaster</li>
-            <li title="2011-2012">Cornell College Mortar Board Torch Chapter Member</li>
-            <li title="2011, 2012">Cornell College Student Symposium Presenter</li>
-            <li title="2011">Securing the eCampus Presenter</li>
-            <li title="2011">Iowa Code Camp Presenter</li>
-            <li title="2013">MidwestPHP Attendee</li>
-            <li title="2013">GoGaRuCo Attendee</li>
-            <li title="2014">Velocity Santa Clara Attendee</li>
-            <li title="2014">Strange Loop Attendee</li>
+            {% for activity in site.data.activities %}
+              <li title="{{ activity.year }}">{{ activity.name }}</li>
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -267,39 +154,20 @@
 
         <div class="my_best_work">
           <ul class="gallery">
-            <li>
-            <a href="images/fullscreen/dime.jpg" rel="gallery">
-              <img width="76" height="76" src="images/thumbnails/dime.jpg" alt="Macro of the back of a dime"/>
-            </a>
-            </li>
+            {% for photo in site.data.photography %}
+              <li>
+                <a href="{{ photo.link }}" rel="gallery">
+                  <img width="76" height="76" src="{{ photo.link }}" alt="{{ photo.alt }}" />
+                </a>
+              </li>
+            {% endfor %}
 
             <li>
-            <a href="images/fullscreen/flower.jpg" rel="gallery">
-              <img width="76" height="76" src="images/thumbnails/flower.jpg" alt="Macro of a flower"/>
-            </a>
+              <a target="_blank" href="http://500px.com/LukeKorth" alt="Link to 500px profile">
+                <img width="76" height="76" id="fivehundredpx" src="images/500px.png"/>
+              </a>
             </li>
 
-            <li class="last">
-            <a href="images/fullscreen/frog.jpg" rel="gallery">
-              <img width="76" height="76" src="images/thumbnails/frog.jpg" alt="Macro of a frog"/>
-            </a>
-            </li>
-
-            <li>
-            <a href="images/fullscreen/sky.jpg" rel="gallery">
-              <img width="76" height="76" src="images/thumbnails/sky.jpg" alt="Sunset"/>
-            </a>
-            </li>
-
-            <li>
-            <a href="images/fullscreen/eagle.jpg" rel="gallery">
-              <img width="76" height="76" src="images/thumbnails/eagle.jpg" alt="Close up of an eagle"/>
-            </a>
-            </li>
-
-            <li class="last">
-            <a target="_blank" href="http://500px.com/LukeKorth"><img width="76" height="76" id="fivehundredpx" src="images/500px.png"/></a>
-            </li>
           </ul>
         </div>
       </div>

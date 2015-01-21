@@ -1,0 +1,48 @@
+- title: Braintree (acquired by PayPal 12/2013)
+  date: 7/2013 - present
+  link: https://www.braintreepayments.com
+  bullets:
+    - Developed a new Android SDK from the ground up
+    - Supported a public API and client libraries across many languages
+    - Worked on backend integrations with third parties and payment processors
+    - Learned pair programming and TDD
+
+- title: The Center for Health Enhancement Systems Studies
+  date: 6/2012 - 7/2013
+  subtitle: research center
+  link: http://chess.wisc.edu
+  bullets:
+    - Developed Android applications and RESTful APIs for grant funded research
+    - Worked with the development team to implement use of Git and issue tracking
+    - Increased the use of an open-source software stack to increase the sustainability of projects
+
+- title: J&P Cycles
+  date: 11/2011 - 12/2011
+  subtitle: e-commerce
+  link: http://jpcycles.com
+  bullets:
+    - Worked as an intern in a .NET Developer position in C#, an MVC framework and jQuery
+    - Developed a new checkout process to simplify the website
+    - Increased ease of use and conversion rate
+    - Worked extensively on user testing of the finished product
+    - Learned Git from the creator of <a target="_blank" href="https://github.com/dahlbyk/posh-git">posh-git</a>
+
+- title: Dartmouth College
+  date: 7/2011 - 8/2011
+  subtitle: information security
+  bullets:
+    - Worked for Peter Kiewit Computing Services
+    - Developed a program to analyze VPN event logs and generate alerts of suspicious activity based on geo-location techniques
+    - Analyzed network printers for security flaws
+    - Worked on intrusion detection and prevention
+    - Presented at Securing the eCampus 2011
+    - Demonstrated an attack that had been made against Dartmouth using a flaw in PhpMyAdmin
+
+- title: SISMAT
+  date: 6/2011 - 7/2011
+  subtitle: computer security
+  link: http://www.ists.dartmouth.edu/events/sismat/
+  bullets:
+    - Worked together with other students under the oversight of a professor to gain valuable knowledge and experience in computer security
+    - Studied network security, intrusion detection, low level programming and web application security
+    - Participated in attack and defend hacking scenarios
