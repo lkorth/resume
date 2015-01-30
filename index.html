@@ -11,9 +11,13 @@
     <meta name="keywords" content=""/>
     <meta name="robots" content="index,follow"/>
 
-    <link rel="stylesheet" href="css/default.css" media="screen"/>
-    <link rel="stylesheet" href="css/print.css" media="print"/>
-    <link rel="stylesheet" href="css/font-icons.css">
+    {% css_asset_tag resume %}
+    - /_assets/default.css
+    - /_assets/photoswipe.css
+    - /_assets/photoswipe-skin.css
+    - /_assets/font-icons.css
+    {% endcss_asset_tag %}
+    <link rel="stylesheet" href="assets/print.css" media="print"/>
 
     <script>
       var _gaq = _gaq || [];
@@ -178,10 +182,10 @@
 
     {% include photoswipe.html %}
 
-    <link rel="stylesheet" href="css/photoswipe.css" media="screen">
-    <link rel="stylesheet" href="css/photoswipe-skin.css" media="screen">
-    <script src="js/photoswipe.min.js"></script>
-    <script src="js/photoswipe-ui.js"></script>
+    {% javascript_asset_tag resume %}
+    - /_assets/photoswipe.min.js
+    - /_assets/photoswipe-ui.js
+    {% endjavascript_asset_tag %}
     <script>
       function openPhotoswipe(index) {
         var items = [

@@ -15,6 +15,9 @@ GEM
     fast-stemmer (1.0.2)
     ffi (1.9.6)
     hitimes (1.2.2)
+    japr (0.3.1)
+      jekyll (~> 2.0)
+      liquid (~> 2.4)
     jekyll (2.5.3)
       classifier-reborn (~> 2.0)
       colorator (~> 0.1)
@@ -62,9 +65,12 @@ GEM
     toml (0.1.2)
       parslet (~> 1.5.0)
     yajl-ruby (1.1.0)
+    yui-compressor (0.12.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  japr
   jekyll
+  yui-compressor

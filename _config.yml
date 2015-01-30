@@ -1,3 +1,6 @@
 name: Luke Korth
 
+asset_pipeline:
+  display_path: resume
+
 exclude: [README.md, Gemfile, Gemfile.lock]
