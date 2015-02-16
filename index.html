@@ -12,8 +12,8 @@
     - /_assets/default.css
     - /_assets/photoswipe.css
     - /_assets/photoswipe-skin.css
-    - /_assets/font-icons.css
     {% endcss_asset_tag %}
+    <link rel="stylesheet" href="assets/font-icons.css" media="screen,print"/>
     <link rel="stylesheet" href="assets/print.css" media="print"/>
 
     <script>
@@ -73,8 +73,8 @@
           <ul>
             {% for item in site.data.contact %}
             <li {% if item.type != null %}class="{{ item.type }}"{% endif %}>
-            <i class="{{ item.icon }}"></i>
-            <a {% if item.event != null %}onClick="{{ item.event }}"{% endif %} href="{{ item.link }}">{{ item.text }}</a>
+              <i class="{{ item.icon }}"></i>
+              <a {% if item.event != null %}onClick="{{ item.event }}"{% endif %} href="{{ item.link }}">{{ item.text }}</a>
             </li>
             {% endfor %}
           </ul>
