@@ -2,6 +2,9 @@ name: Luke Korth
 subtitle: Mobile and Web Application Engineer
 
 asset_pipeline:
-  display_path: resume
+  bundle: true
+  compress: true
+  output_path: assets
+  gzip: true
 
 exclude: [README.md, Gemfile, Gemfile.lock]

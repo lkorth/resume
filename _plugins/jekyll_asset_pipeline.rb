@@ -1,17 +1,17 @@
-require 'japr'
+require 'jekyll_asset_pipeline'
 
-module JAPR
-  class CssTagTemplate < JAPR::Template
+module JekyllAssetPipeline
+  class CssTagTemplate < JekyllAssetPipeline::Template
     def self.filetype
       '.css'
     end
 
     def html
-      "<link href='/#{@path}/#{@filename}' rel='stylesheet' type='text/css' media='screen' />"
+      "<link href='/#{@path}/#{@filename}' rel='stylesheet' type='text/css' media='screen' />\n"
     end
   end
 
-  class CssCompressor < JAPR::Compressor
+  class CssCompressor < JekyllAssetPipeline::Compressor
     require 'yui/compressor'
 
     def self.filetype
@@ -23,7 +23,7 @@ module JAPR
     end
   end
 
-  class JavaScriptCompressor < JAPR::Compressor
+  class JavaScriptCompressor < JekyllAssetPipeline::Compressor
     require 'yui/compressor'
 
     def self.filetype

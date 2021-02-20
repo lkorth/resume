@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
 gem "jekyll"
-gem "japr"
+gem "jekyll_asset_pipeline"
 gem "yui-compressor"
