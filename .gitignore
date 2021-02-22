@@ -1,4 +1,6 @@
 .asset_pipeline
+.bundle
+.DS_Store
 .jekyll-cache
 _site
-.DS_Store
+vendor
