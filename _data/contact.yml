@@ -1,8 +1,3 @@
-- icon: icon-phone icon-large
-  event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'phone']);
-  link: tel:+19203580434
-  text: (920)358-0434
-
 - icon: icon-mail-alt icon-large
   event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'email']);
   link: mailto:luke+resume@lukekorth.com
