@@ -10,8 +10,6 @@
 
     {% css_asset_tag resume %}
     - /_assets/default.css
-    - /_assets/photoswipe.css
-    - /_assets/photoswipe-skin.css
     {% endcss_asset_tag %}
     <link rel="stylesheet" href="assets/font-icons.css" media="screen,print"/>
     <link rel="stylesheet" href="assets/print.css" media="print"/>
@@ -137,59 +135,8 @@
         </div>
       </div>
 
-      <div class="clearfix"></div>
-
-      <div class="section" id="selected-works">
-        <h5>Photography</h5>
-
-        <div class="my_best_work">
-          <ul class="gallery">
-            {% for photo in site.data.photography %}
-            <li>
-            <a href="{{ photo.link }}" onClick="openPhotoswipe({{ forloop.index0 }}); return false;">
-              <img width="76" height="76" src="{{ photo.link }}" alt="{{ photo.alt }}" />
-            </a>
-            </li>
-            {% endfor %}
-
-            <li>
-            <a target="_blank" href="http://500px.com/LukeKorth" alt="Link to 500px profile">
-              <img width="76" height="76" id="fivehundredpx" src="images/500px.png"/>
-            </a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
       </aside>
       </section>
     </div>
-
-    {% include photoswipe.html %}
-
-    {% javascript_asset_tag resume %}
-    - /_assets/photoswipe.min.js
-    - /_assets/photoswipe-ui.js
-    {% endjavascript_asset_tag %}
-    <script>
-      function openPhotoswipe(index) {
-        var items = [
-          {% for photo in site.data.photography %}
-          {
-            src: '{{ photo.link }}',
-            w: {{ photo.width }},
-            h: {{ photo.height }}
-          },
-          {% endfor %}
-        ];
-
-        var options = {
-          index: index
-        };
-
-        var gallery = new PhotoSwipe(document.querySelectorAll('.pswp')[0], PhotoSwipeUI_Default, items, options);
-        gallery.init();
-      }
-    </script>
   </body>
 </html>
