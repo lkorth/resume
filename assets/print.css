@@ -18,6 +18,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
+@page {
+  size: auto;
+  margin: 0mm;
+}
+
 body {
   color: #000;
   font-family: Tahoma, Arial;
