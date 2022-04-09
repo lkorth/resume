@@ -5,7 +5,7 @@
 
 - icon: icon-link icon-large
   event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'website']);
-  link: http://lukekorth.com
+  link: https://lukekorth.com
   text: lukekorth.com
 
 - icon: icon-github-circled icon-large
@@ -22,12 +22,12 @@
 - icon: icon-linkedin-squared icon-large
   type: website
   event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'LinkedIn']);
-  link: http://www.linkedin.com/in/lukekorth/
+  link: https://www.linkedin.com/in/lukekorth/
   text: LinkedIn
 
 - icon: icon-linkedin-squared icon-large
   type: printed
-  link: http://www.linkedin.com/in/lukekorth/
+  link: https://www.linkedin.com/in/lukekorth/
   text: linkedin.com/in/lukekorth
 
 - icon: icon-download icon-large
@@ -37,5 +37,5 @@
 
 - icon: icon-desktop icon-large
   type: printed
-  link: http://lukekorth.com/resume
+  link: https://lukekorth.com/resume
   text: View online at lukekorth.com/resume
