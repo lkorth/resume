@@ -32,8 +32,7 @@
 
 - icon: icon-download icon-large
   type: website
-  event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'download resume']);
-  link: resume.pdf
+  event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'download resume']); window.print();
   text: download resume
 
 - icon: icon-desktop icon-large

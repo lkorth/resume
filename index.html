@@ -63,7 +63,7 @@
             {% for item in site.data.contact %}
             <li {% if item.type != null %}class="{{ item.type }}"{% endif %}>
               <i class="{{ item.icon }}"></i>
-              <a {% if item.event != null %}onClick="{{ item.event }}"{% endif %} href="{{ item.link }}">{{ item.text }}</a>
+              <a {% if item.event != null %}onClick="{{ item.event }}"{% endif %} {% if item.link != null %}href="{{ item.link }}" target="_blank"{% endif %}>{{ item.text }}</a>
             </li>
             {% endfor %}
           </ul>
