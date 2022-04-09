@@ -1,23 +1,15 @@
-- name: Association of Computing Machinery Member
-  year: 2009-2013
-
-- name: Cornell College Computing Club Co-Founder and Webmaster
-  year: 2010-2012
-
-- name: Cornell College Mortar Board Torch Chapter Member
-  year: 2011-2012
-
-- name: Cornell College Student Symposium Presenter
-  year: 2011, 2012
-
 - name: Securing the eCampus Presenter
   year: 2011
 
 - name: Iowa Code Camp Presenter
   year: 2011
 
-- name: Strange Loop Attendee
-  year: 2014
+- name: Cornell College Student Symposium Presenter
+  year: 2011, 2012
 
-- name: Google I/O Speaker and Attendee
+- name: Google I/O Speaker
   year: 2015
+
+- name: Bridge for communicating data outside of a mobile application patent
+  year: 2017
+  link: https://patents.justia.com/patent/10565591

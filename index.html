@@ -129,7 +129,11 @@
         <div class="award">
           <ul>
             {% for activity in site.data.activities %}
-            <li title="{{ activity.year }}">{{ activity.name }}</li>
+            <li title="{{ activity.year }}">
+              {% if activity.link != null %}<a href="{{ activity.link }}" target="_blank">{% endif %}
+              {{ activity.name }}
+              {% if activity.link != null %}</a>{% endif %}
+            </li>
             {% endfor %}
           </ul>
         </div>
