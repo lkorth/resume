@@ -8,3 +8,4 @@ asset_pipeline:
   gzip: true
 
 exclude: [README.md, Gemfile, Gemfile.lock, vendor]
+host: 0.0.0.0
