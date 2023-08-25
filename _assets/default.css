@@ -76,6 +76,18 @@ h3 {
   text-shadow: 1px 1px 1px black;
 }
 
+h4 {
+  font-size:22px;
+  text-align:left;
+  line-height:35px;
+  text-indent:0px;
+  color:#80C465;
+  font-weight:normal;
+  text-shadow: 1px -1px 1px black;
+  font-family: Helvetica, sans-serif;
+  font-weight:normal;
+}
+
 h5 {
   font-size:18px;
   text-align:left;
@@ -176,7 +188,7 @@ header {
 .section {
   width:100%;
   float:left;
-  padding:0px 0px 0px 0px;
+  padding:0px 0px 10px 0px;
 }
 
 .tldr {
@@ -186,7 +198,7 @@ header {
 .work_item {
   width:100%;
   float:left;
-  padding:25px 0px 25px 0px;
+  padding:15px 0px 25px 0px;
 }
 
 .points {
@@ -236,7 +248,7 @@ header {
 .education_items {
   width:100%;
   float:left;
-  padding:15px 0px 25px 0px;
+  padding:10px 0px 5px 0px;
 }
 
 .skills {
@@ -266,11 +278,6 @@ header {
   padding:15px 0px 25px 0px;
 }
 
-.my_best_work {
-  width:270px;
-  padding:15px 0px 25px 0px;
-}
-
 .gallery li {
   display:inline;
 }
@@ -281,8 +288,4 @@ header {
 
 .education_items h6, .references h6 {
   color:#fff;
-}
-
-#fivehundredpx {
-  background-color: #444;
 }

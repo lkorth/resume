@@ -68,6 +68,14 @@ h3 {
   font-weight: bold;
 }
 
+h4 {
+  font-size: 22px;
+  text-align: left;
+  line-height: 39px;
+  font-weight: bold;
+  text-indent: 0px;
+}
+
 h5 {
   font-size: 18px;
   text-align: left;
@@ -128,6 +136,10 @@ li {
   float: left;
 }
 
+#main .section {
+  padding: 0px 0px 28px 0px;
+}
+
 #contents {
   width: 100%;
   padding: 75px 0px 70px 0px;
@@ -136,13 +148,13 @@ li {
 .section {
   width: 100%;
   float: left;
-  padding: 0px 0px 0px 0px;
+  padding: 0px 0px 15px 0px;
 }
 
 .work_item {
   width: 100%;
   float: left;
-  padding: 25px 0px 25px 0px;
+  padding: 25px 0px 20px 0px;
 }
 
 .points {
@@ -161,13 +173,13 @@ li {
 .education_items {
   width: 100%;
   float: left;
-  padding: 15px 0px 25px 0px;
+  padding: 15px 0px 10px 0px;
 }
 
 .skills {
   float: left;
   width: 130px;
-  padding: 15px 0px 25px 0px;
+  padding: 15px 0px 15px 0px;
 }
 
 .skills ul {
@@ -187,7 +199,7 @@ li {
 
 .award {
   width: 100%;
-  padding: 15px 0px 25px 0px;
+  padding: 15px 0px 15px 0px;
 }
 
 #sidebar {
