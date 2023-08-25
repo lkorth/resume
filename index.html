@@ -111,22 +111,6 @@
 
       <div class="clearfix"></div>
 
-      <div class="section">
-        <h5>Awards</h5>
-
-        <div class="award">
-          <ul>
-            {% for award in site.data.awards %}
-            <li title="{{ award.year }}">
-              {% if award.link != null %}<a href="{{ award.link }}" target="_blank">{% endif %}
-              {{ award.name }}
-              {% if award.link != null %}</a>{% endif %}
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-
       <div id="activities" class="section">
         <h5>Activities</h5>
 
