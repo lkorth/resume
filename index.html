@@ -111,6 +111,24 @@
 
       <div class="clearfix"></div>
 
+      <div id="publications" class="section">
+        <h5>Publications</h5>
+
+        <div class="award">
+          <ul>
+            {% for publication in site.data.publications %}
+            <li title="{{ publication.year }}">
+              {% if publication.link != null %}<a href="{{ publication.link }}" target="_blank">{% endif %}
+              {{ publication.name }}
+              {% if publication.link != null %}</a>{% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
       <div id="activities" class="section">
         <h5>Activities</h5>
 
