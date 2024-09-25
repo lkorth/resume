@@ -1,5 +1,6 @@
 - title: Braintree (acquired by PayPal 12/2013)
   date: 7/2013 - present
+  subtitle: Group Technical Lead for Merchant Integrations, Senior Member of Technical Staff
   link: https://www.braintreepayments.com
   bullets:
     - Developed a new Android SDK from the ground up
@@ -7,7 +8,7 @@
     - Supported a public API and client libraries across many languages
     - Worked on backend integrations with third parties and payment processors
     - Learned pair programming and TDD
-    - Led the building Braintree's new <a target="_blank" href="https://graphql.braintreepayments.com/">GraphQL API</a> from the ground up
+    - Led building Braintree's new <a target="_blank" href="https://graphql.braintreepayments.com/">GraphQL API</a> from the ground up
     - Technical owner of Braintree APIs
 
 - title: The Center for Health Enhancement Systems Studies
