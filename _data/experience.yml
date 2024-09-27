@@ -3,13 +3,15 @@
   subtitle: Group Technical Lead for Merchant Integrations, Senior Member of Technical Staff
   link: https://www.braintreepayments.com
   bullets:
-    - Developed a new Android SDK from the ground up
-    - Tech lead for Braintree SDKs
-    - Supported a public API and client libraries across many languages
-    - Worked on backend integrations with third parties and payment processors
-    - Learned pair programming and TDD
+    - Member of technical governance team and architecture review board
+    - Directly oversee 8 teams and work with over 30 teams
     - Led building Braintree's new <a target="_blank" href="https://graphql.braintreepayments.com/">GraphQL API</a> from the ground up
     - Technical owner of Braintree APIs
+    - Supported a public API and client libraries across many languages
+    - Tech lead for Braintree SDKs
+    - Developed a new Android SDK from the ground up
+    - Learned pair programming and TDD
+    - Worked on backend integrations with third parties and payment processors
 
 - title: The Center for Health Enhancement Systems Studies
   date: 6/2012 - 7/2013
