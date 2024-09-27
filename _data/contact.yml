@@ -1,7 +1,7 @@
 - icon: icon-mail-alt icon-large
   event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'email']);
-  link: mailto:luke+resume@lukekorth.com
-  text: luke+resume@lukekorth.com
+  link: mailto:resume@lukekorth.com
+  text: resume@lukekorth.com
 
 - icon: icon-link icon-large
   event: _gaq.push(['_trackEvent', 'Link', 'Contact Info', 'website']);
