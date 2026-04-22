@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{{ site.name }}</title>
 
@@ -14,7 +14,6 @@
     <header>
     <div class="headerwrapper">
       <h1>{{ site.name }}</h1>
-      <div class="clearfix"></div>
       <h2>{{ site.subtitle }}</h2>
     </div>
     </header>
@@ -45,8 +44,8 @@
           <ul>
             {% for item in site.data.contact %}
             <li {% if item.type != null %}class="{{ item.type }}"{% endif %}>
-              <i class="{{ item.icon }}"></i>
-              <a {% if item.event != null %}onClick="{{ item.event }}"{% endif %} {% if item.link != null %}href="{{ item.link }}" target="_blank"{% endif %}>{{ item.text }}</a>
+              <i class="{{ item.icon }}" aria-hidden="true"></i>
+              <a {% if item.event != null %}onclick="{{ item.event }}"{% endif %} {% if item.link != null %}href="{{ item.link }}" target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.text }}</a>
             </li>
             {% endfor %}
           </ul>
@@ -67,32 +66,15 @@
         {% endfor %}
       </div>
 
-      <div class="clearfix"></div>
-
       <div class="section">
         <h5>Skills</h5>
 
-        <div class="skills">
-          <ul>
-            {% for skill in site.data.skills %}
-            {% if forloop.index <= forloop.rindex %}
-            <li>{{ skill }}</li>
-            {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="skills">
-          <ul>
-            {% for skill in site.data.skills %}
-            {% if forloop.index > forloop.rindex %}
-            <li>{{ skill }}</li>
-            {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
+        <ul class="skills">
+          {% for skill in site.data.skills %}
+          <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
       </div>
-
-      <div class="clearfix"></div>
 
       <div id="publications" class="section">
         <h5>Publications</h5>
@@ -101,7 +83,7 @@
           <ul>
             {% for publication in site.data.publications %}
             <li title="{{ publication.year }}">
-              {% if publication.link != null %}<a href="{{ publication.link }}" target="_blank">{% endif %}
+              {% if publication.link != null %}<a href="{{ publication.link }}" target="_blank" rel="noopener noreferrer">{% endif %}
               {{ publication.name }}
               {% if publication.link != null %}</a>{% endif %}
             </li>
@@ -110,8 +92,6 @@
         </div>
       </div>
 
-      <div class="clearfix"></div>
-
       <div id="activities" class="section">
         <h5>Activities</h5>
 
@@ -119,7 +99,7 @@
           <ul>
             {% for activity in site.data.activities %}
             <li title="{{ activity.year }}">
-              {% if activity.link != null %}<a href="{{ activity.link }}" target="_blank">{% endif %}
+              {% if activity.link != null %}<a href="{{ activity.link }}" target="_blank" rel="noopener noreferrer">{% endif %}
               {{ activity.name }}
               {% if activity.link != null %}</a>{% endif %}
             </li>

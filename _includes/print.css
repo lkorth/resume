@@ -1,9 +1,9 @@
 /* Reset */
-html, body, div, span, applet, object, iframe,
+html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+a, abbr, acronym, address, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, sub, sup, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
@@ -119,13 +119,14 @@ li {
 }
 
 #contents {
-  width: 100%;
+  display: flex;
+  gap: 94px;
   padding: 75px 0 70px;
 }
 
 #main {
-  width: 475px;
-  float: left;
+  flex: 1;
+  min-width: 0;
 }
 
 #main .section {
@@ -133,14 +134,10 @@ li {
 }
 
 .section {
-  width: 100%;
-  float: left;
   padding: 0 0 15px;
 }
 
 .work_item {
-  width: 100%;
-  float: left;
   padding: 25px 0 20px;
 }
 
@@ -158,8 +155,6 @@ li {
 }
 
 .education_items {
-  width: 100%;
-  float: left;
   padding: 15px 0 10px;
 }
 
@@ -173,33 +168,24 @@ li {
 }
 
 .skills {
-  float: left;
-  width: 130px;
+  columns: 2;
   padding: 15px 0;
 }
 
-.skills ul {
-  float: left;
-}
-
-.skills ul li {
-  float: left;
-  display: block;
-  clear: both;
+.skills li {
   padding: 0;
   margin: 0;
   line-height: 23px;
+  break-inside: avoid;
 }
 
 .award {
-  width: 100%;
   padding: 15px 0;
 }
 
 #sidebar {
   width: 260px;
-  float: left;
-  margin-left: 94px;
+  flex-shrink: 0;
 }
 
 #activities {
