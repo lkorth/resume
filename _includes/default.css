@@ -1,0 +1,258 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del,
+dfn, em, font, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+@font-face {
+  font-family: "Humnst777 Blk BT";
+  src: url(font/Hum777k.ttf);
+}
+
+@font-face {
+  font-family: "Humnst777 BT";
+  src: url(font/Hum777Bd.ttf);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #3b3c3e url(images/bg-pattern.jpg);
+  color: #fff;
+}
+
+#wrapper {
+  width: 850px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+img {
+  border: none;
+}
+
+p {
+  font-family: Tahoma, Geneva, sans-serif;
+  width: 90%;
+  font-size: 11px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.medium_text {
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 50px;
+  float: left;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Humnst777 Blk BT";
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  color: #425430;
+  font-family: "Humnst777 BT";
+}
+
+h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+}
+
+h4 {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 35px;
+  color: #80C465;
+  font-weight: normal;
+  text-shadow: 1px -1px 1px black;
+}
+
+h5 {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 35px;
+  color: #80C465;
+  font-weight: normal;
+  text-shadow: 1px -1px 1px black;
+}
+
+h6 {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #a4a4a4;
+  font-weight: normal;
+}
+
+a {
+  color: #718C44;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-family: Tahoma, Geneva, sans-serif;
+  list-style: none;
+  line-height: 18px;
+  font-size: 11px;
+  margin-bottom: 9px;
+}
+
+.clearfix {
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.printed {
+  display: none;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 149px;
+  line-height: 35px;
+  background-image: url(images/bg-header.png);
+}
+
+.headerwrapper {
+  width: 850px;
+  display: block;
+  margin: 0 auto;
+  padding: 36px 0 0;
+  height: 113px;
+}
+
+/* Main */
+#contents {
+  width: 100%;
+  padding: 50px 0 70px;
+}
+
+#main {
+  width: 475px;
+  float: left;
+}
+
+.section {
+  width: 100%;
+  float: left;
+  padding: 0 0 10px;
+}
+
+.tldr {
+  padding-bottom: 30px;
+}
+
+.work_item {
+  width: 100%;
+  float: left;
+  padding: 15px 0 25px;
+}
+
+.points {
+  padding-left: 15px;
+}
+
+.points li {
+  list-style: circle;
+}
+
+.year {
+  font-size: 12px;
+  float: right;
+  padding-top: 6px;
+  color: #a4a4a4;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 260px;
+  float: left;
+  margin-left: 94px;
+}
+
+.contact_Info_items {
+  width: 100%;
+  float: left;
+  padding: 15px 0 25px;
+}
+
+.contact_Info_items ul li {
+  line-height: 18px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.contact_Info_items ul li a {
+  padding-left: 15px;
+}
+
+.education_items {
+  width: 100%;
+  float: left;
+  padding: 10px 0 5px;
+}
+
+.education_items h6,
+.references h6 {
+  color: #fff;
+}
+
+.skills {
+  float: left;
+  width: 130px;
+  padding: 15px 0 25px;
+}
+
+.skills ul {
+  float: left;
+}
+
+.skills ul li {
+  float: left;
+  display: block;
+  clear: both;
+  line-height: 23px;
+  padding: 0;
+  margin: 0;
+}
+
+.award {
+  width: 100%;
+  padding: 15px 0 25px;
+}

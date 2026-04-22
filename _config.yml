@@ -1,11 +1,5 @@
 name: Luke Korth
 subtitle: Software Engineer
 
-asset_pipeline:
-  bundle: true
-  compress: true
-  output_path: assets
-  gzip: true
-
 exclude: [README.md, Gemfile, Gemfile.lock, vendor]
 host: 0.0.0.0

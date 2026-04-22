@@ -1,4 +1,4 @@
-/**css reset**/
+/* Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,7 +31,7 @@ body {
 #wrapper {
   width: 850px;
   margin: 0 auto;
-  padding: 0px 40px;
+  padding: 0 40px;
 }
 
 img {
@@ -43,19 +43,16 @@ p {
   width: 90%;
   text-align: justify;
   line-height: 20px;
-  padding: 0;
 }
 
 h1 {
   font-size: 50px;
-  text-align: left;
   float: left;
   font-weight: bold;
 }
 
 h2 {
   font-size: 40px;
-  text-align: left;
   font-weight: bold;
   line-height: 50px;
 }
@@ -63,33 +60,25 @@ h2 {
 h3 {
   font-family: Helvetica, sans-serif;
   font-size: 20px;
-  text-align: left;
   line-height: 25px;
   font-weight: bold;
 }
 
 h4 {
   font-size: 22px;
-  text-align: left;
   line-height: 39px;
   font-weight: bold;
-  text-indent: 0px;
 }
 
 h5 {
   font-size: 18px;
-  text-align: left;
   line-height: 35px;
   font-weight: bold;
-  text-indent: 0px;
 }
 
 h6 {
   font-size: 14px;
-  text-align: left;
   line-height: 22px;
-  padding: 0;
-  margin: 0;
   color: #545454;
 }
 
@@ -116,7 +105,6 @@ li {
 
 .year {
   font-size: 12px;
-  text-align: left;
   float: right;
   padding-top: 6px;
   color: #545454;
@@ -126,9 +114,13 @@ li {
   width: 850px;
   display: block;
   margin: 0 auto;
-  padding: 36px 0px 0px 0px;
+  padding: 36px 0 0;
   height: 113px;
-  margin: 0 auto;
+}
+
+#contents {
+  width: 100%;
+  padding: 75px 0 70px;
 }
 
 #main {
@@ -137,24 +129,19 @@ li {
 }
 
 #main .section {
-  padding: 0px 0px 28px 0px;
-}
-
-#contents {
-  width: 100%;
-  padding: 75px 0px 70px 0px;
+  padding: 0 0 28px;
 }
 
 .section {
   width: 100%;
   float: left;
-  padding: 0px 0px 15px 0px;
+  padding: 0 0 15px;
 }
 
 .work_item {
   width: 100%;
   float: left;
-  padding: 25px 0px 20px 0px;
+  padding: 25px 0 20px;
 }
 
 .points {
@@ -173,18 +160,26 @@ li {
 .education_items {
   width: 100%;
   float: left;
-  padding: 15px 0px 10px 0px;
+  padding: 15px 0 10px;
+}
+
+.education_items h6,
+.references h6 {
+  color: #000;
+}
+
+.education_items p {
+  color: #414143;
 }
 
 .skills {
   float: left;
   width: 130px;
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0;
 }
 
 .skills ul {
   float: left;
-  list-style: none;
 }
 
 .skills ul li {
@@ -194,12 +189,11 @@ li {
   padding: 0;
   margin: 0;
   line-height: 23px;
-  list-style: none;
 }
 
 .award {
   width: 100%;
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0;
 }
 
 #sidebar {
@@ -210,14 +204,6 @@ li {
 
 #activities {
   padding-top: 35px;
-}
-
-.education_items h6, .references h6 {
-  color: #000;
-}
-
-.education_items p {
-  color: #414143
 }
 
 .website {
