@@ -1,12 +1,16 @@
 - title: Braintree (acquired by PayPal 12/2013)
   date: 7/2013 - present
   subtitle: Group Technical Lead for Merchant Integrations, Senior Member of Technical Staff
-  link: https://www.braintreepayments.com
+  link: https://paypal.com/braintree
   bullets:
     - Member of technical governance team and architecture review board
-    - Directly oversee 8 teams and work with over 30 teams
-    - Led building Braintree's new <a target="_blank" href="https://graphql.braintreepayments.com/">GraphQL API</a> from the ground up
+    - Technical leader for 10 teams and worked with over 40 teams
+    - Set architectural direction supporting 25 billion transactions over $1.5 trillion in payment volume yearly
+    - Maintained utmost levels of reliability, five 9s+
+    - Detected and debugged low level external networking issues in some of the largest networking vendors on the Internet
+    - Became SME of application PKI and authentication
     - Technical owner of Braintree APIs
+    - Led building Braintree's new <a target="_blank" href="https://graphql.braintreepayments.com/">GraphQL API</a> from the ground up
     - Supported a public API and client libraries across many languages
     - Tech lead for Braintree SDKs
     - Developed a new Android SDK from the ground up
