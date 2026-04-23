@@ -40,10 +40,6 @@ body {
   box-sizing: border-box;
 }
 
-img {
-  border: none;
-}
-
 p {
   font-family: Tahoma, Geneva, sans-serif;
   width: 90%;
@@ -195,17 +191,17 @@ header {
   flex-shrink: 0;
 }
 
-.contact_Info_items {
+.contact_info_items {
   padding: 15px 0 25px;
 }
 
-.contact_Info_items ul li {
+.contact_info_items ul li {
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 12px;
 }
 
-.contact_Info_items ul li a {
+.contact_info_items ul li a {
   padding-left: 15px;
 }
 
