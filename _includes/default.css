@@ -63,7 +63,6 @@ h3 {
   line-height: 25px;
   font-weight: bold;
   color: #fff;
-  text-shadow: 1px 1px 1px black;
 }
 
 h4 {
@@ -72,7 +71,6 @@ h4 {
   line-height: 35px;
   color: #80C465;
   font-weight: normal;
-  text-shadow: 1px -1px 1px black;
 }
 
 h5 {
@@ -81,7 +79,6 @@ h5 {
   line-height: 35px;
   color: #80C465;
   font-weight: normal;
-  text-shadow: 1px -1px 1px black;
 }
 
 h6 {
