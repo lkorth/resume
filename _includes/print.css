@@ -19,19 +19,20 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 @page {
-  size: auto;
-  margin: 0mm;
+  size: letter;
+  margin: 12mm 10mm;
 }
 
 body {
   color: #000;
+  background: #fff;
   font-family: Tahoma, Arial;
 }
 
-#wrapper {
-  width: 850px;
-  margin: 0 auto;
-  padding: 0 40px;
+header {
+  background: none;
+  background-image: none;
+  min-height: auto;
 }
 
 img {
@@ -47,14 +48,16 @@ p {
 
 h1 {
   font-size: 50px;
-  float: left;
   font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 24px;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 30px;
+  color: #000;
 }
 
 h3 {
@@ -62,18 +65,24 @@ h3 {
   font-size: 20px;
   line-height: 25px;
   font-weight: bold;
+  color: #000;
+  text-shadow: none;
 }
 
 h4 {
   font-size: 22px;
   line-height: 39px;
   font-weight: bold;
+  color: #000;
+  text-shadow: none;
 }
 
 h5 {
   font-size: 18px;
   line-height: 35px;
   font-weight: bold;
+  color: #000;
+  text-shadow: none;
 }
 
 h6 {
@@ -111,22 +120,20 @@ li {
 }
 
 .headerwrapper {
-  width: 850px;
   display: block;
-  margin: 0 auto;
-  padding: 36px 0 0;
-  height: 113px;
+  padding: 24px 0 0;
+}
+
+#wrapper {
+  width: 100%;
+  padding: 0;
 }
 
 #contents {
   display: flex;
-  gap: 94px;
-  padding: 75px 0 70px;
-}
-
-#main {
-  flex: 1;
-  min-width: 0;
+  flex-direction: row;
+  gap: 40px;
+  padding: 25px 0 70px;
 }
 
 #main .section {
@@ -139,6 +146,8 @@ li {
 
 .work_item {
   padding: 25px 0 20px;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .points {
@@ -149,6 +158,10 @@ li {
   list-style: circle;
 }
 
+.contact_Info_items {
+  padding: 15px 0;
+}
+
 .contact_Info_items ul li a {
   padding-left: 15px;
   padding-top: 15px;
@@ -156,11 +169,13 @@ li {
 
 .education_items {
   padding: 15px 0 10px;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .education_items h6,
 .references h6 {
-  color: #000;
+  color: #545454;
 }
 
 .education_items p {
@@ -170,6 +185,8 @@ li {
 .skills {
   columns: 2;
   padding: 15px 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .skills li {
@@ -184,13 +201,15 @@ li {
 }
 
 #sidebar {
-  width: 260px;
+  width: 200px;
   flex-shrink: 0;
 }
 
-#activities {
-  padding-top: 35px;
+#sidebar .section {
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
+
 
 .website {
   display: none;

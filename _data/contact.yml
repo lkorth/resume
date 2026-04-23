@@ -30,8 +30,3 @@
   type: website
   event: window.print();
   text: download resume
-
-- icon: icon-desktop icon-large
-  type: printed
-  link: https://lukekorth.com/resume
-  text: View online at lukekorth.com/resume
