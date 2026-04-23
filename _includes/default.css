@@ -284,10 +284,11 @@ header {
   font-weight: 400;
 }
 
-.education_items p:last-child:not(:first-child):not(:empty) {
+p.edu-meta {
   font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
   font-size: 10px;
   color: #4dd9c0;
+  margin-top: 2px;
 }
 
 .skills {
@@ -308,6 +309,13 @@ header {
   letter-spacing: .03em;
   line-height: 1.6;
   margin: 0;
+}
+
+.list-year {
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
+  font-size: 10px;
+  color: rgba(77,217,192,.6);
+  display: block;
 }
 
 .award {

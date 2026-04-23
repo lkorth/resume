@@ -27,7 +27,7 @@
         </div>
 
         <div class="section">
-          <h4>Work Experience</h4>
+          <h4>WORK_EXPERIENCE.LOG</h4>
 
           {% for item in site.data.experience %}
           {% include work-item.html %}
@@ -59,9 +59,7 @@
         <div class="education_items">
           <h6 class="bold">{{ item.title }}</h6>
           <p>{{ item.org }}</p>
-          <p>{{ item.date }}</p>
-          <p>{{ item.gpa }}</p>
-          <p>{{ item.info }}</p>
+          <p class="edu-meta">{{ item.date }}{% if item.gpa %} · {{ item.gpa }}{% endif %}{% if item.info %} · {{ item.info }}{% endif %}</p>
         </div>
         {% endfor %}
       </div>
@@ -82,7 +80,8 @@
         <div class="award">
           <ul>
             {% for publication in site.data.publications %}
-            <li title="{{ publication.year }}">
+            <li>
+              <span class="list-year">{{ publication.year }}</span>
               {% if publication.link != null %}<a href="{{ publication.link }}" target="_blank" rel="noopener noreferrer">{% endif %}
               {{ publication.name }}
               {% if publication.link != null %}</a>{% endif %}
@@ -98,7 +97,8 @@
         <div class="award">
           <ul>
             {% for activity in site.data.activities %}
-            <li title="{{ activity.year }}">
+            <li>
+              <span class="list-year">{{ activity.year }}</span>
               {% if activity.link != null %}<a href="{{ activity.link }}" target="_blank" rel="noopener noreferrer">{% endif %}
               {{ activity.name }}
               {% if activity.link != null %}</a>{% endif %}
