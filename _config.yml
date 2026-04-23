@@ -1,5 +1,5 @@
 name: Luke Korth
 subtitle: Software Engineer
 
-exclude: [README.md, Gemfile, Gemfile.lock, vendor]
+exclude: [README.md, Gemfile, Gemfile.lock, vendor, font]
 host: 0.0.0.0

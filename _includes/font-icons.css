@@ -1,10 +1,6 @@
 @font-face {
   font-family: 'font-icons';
-  src: url('font/font-icons.eot?30134212');
-  src: url('font/font-icons.eot?30134212#iefix') format('embedded-opentype'),
-       url('font/font-icons.woff?30134212') format('woff'),
-       url('font/font-icons.ttf?30134212') format('truetype'),
-       url('font/font-icons.svg?30134212#font-icons') format('svg');
+  src: url('data:font/woff;base64,{{ "font/font-icons.woff" | base64_file }}') format('woff');
   font-weight: normal;
   font-style: normal;
 }
