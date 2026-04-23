@@ -6,59 +6,123 @@
 body {
   color: #000;
   background: #fff;
+  background-image: none;
 }
 
 header {
   background: none;
   background-image: none;
-  min-height: auto;
 }
 
 p {
   text-align: justify;
+  color: #000;
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.medium_text {
+  font-size: 13px;
 }
 
 h1 {
   color: #000;
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
 h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
   font-size: 24px;
+  font-weight: 700;
   line-height: 30px;
   color: #000;
+  letter-spacing: normal;
+  text-transform: none;
+  margin-top: 0;
 }
 
 h3 {
   color: #000;
+  font-size: 20px;
 }
 
 h4 {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  font-size: 22px;
   line-height: 39px;
   font-weight: bold;
   color: #000;
+  letter-spacing: normal;
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+h4::after {
+  display: none;
 }
 
 h5 {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  font-size: 18px;
+  line-height: 35px;
   font-weight: bold;
   color: #000;
+  letter-spacing: normal;
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+h5::after {
+  display: none;
 }
 
 h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
   color: #545454;
+  letter-spacing: normal;
 }
 
 a {
   color: #000;
 }
 
+li {
+  font-size: 11px;
+  line-height: 18px;
+  margin-bottom: 9px;
+  color: #000;
+}
+
+.points {
+  padding-left: 15px;
+}
+
+.points li {
+  list-style: circle;
+  padding-left: 0;
+}
+
+.points li::before {
+  display: none;
+}
+
 .year {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  font-size: 12px;
   color: #545454;
+  letter-spacing: normal;
+  padding-top: 6px;
 }
 
 .headerwrapper {
-  padding: 24px 0 0;
-  min-height: 0;
+  padding: 24px 0 20px;
+  border-bottom: 1px solid #ccc;
 }
 
 #wrapper {
@@ -68,29 +132,59 @@ a {
 #contents {
   flex-direction: row;
   gap: 40px;
-  padding: 25px 0 70px;
+  padding: 25px 0 0;
 }
 
 #main .section {
   padding: 0 0 28px;
+  margin-bottom: 0;
 }
 
 .section {
   padding: 0 0 15px;
+  margin-bottom: 0;
+}
+
+.tldr {
+  padding-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .work_item {
   padding: 25px 0 20px;
+  margin-bottom: 0;
   page-break-inside: avoid;
   break-inside: avoid;
+}
+
+.work_item br {
+  display: block;
 }
 
 .contact_info_items {
   padding: 15px 0;
 }
 
+.contact_info_items ul li {
+  display: list-item;
+  color: #000;
+}
+
 .contact_info_items ul li a {
-  padding-top: 15px;
+  padding-left: 15px;
+  color: #000;
+}
+
+.contact_info_items ul li i {
+  color: #000;
+}
+
+.contact_info_items ul li.website {
+  display: none;
+}
+
+.contact_info_items ul li.printed {
+  display: list-item;
 }
 
 .education_items {
@@ -101,21 +195,47 @@ a {
 
 .education_items h6,
 .references h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
   color: #545454;
+  letter-spacing: normal;
 }
 
 .education_items p {
   color: #414143;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
 }
 
 .skills {
+  display: flex;
+  flex-wrap: wrap;
   padding: 15px 0;
   break-inside: avoid;
   page-break-inside: avoid;
 }
 
+.skills li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  font-size: 9px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  padding: 3px 8px;
+  color: #000;
+  letter-spacing: normal;
+  break-inside: avoid;
+}
+
 .award {
   padding: 15px 0;
+}
+
+.award ul li {
+  color: #000;
+}
+
+.award ul li a {
+  color: #000;
 }
 
 #sidebar {
