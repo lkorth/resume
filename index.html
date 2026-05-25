@@ -44,7 +44,7 @@
           <ul>
             {% for item in site.data.contact %}
             <li {% if item.type != null %}class="{{ item.type }}"{% endif %}>
-              <i class="{{ item.icon }}" aria-hidden="true"></i>
+              {% include icon.html name=item.icon %}
               <a {% if item.event != null %}onclick="{{ item.event }}"{% endif %} {% if item.link != null %}href="{{ item.link }}" target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.text }}</a>
             </li>
             {% endfor %}

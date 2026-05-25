@@ -169,12 +169,13 @@ li {
 }
 
 .contact_info_items ul li a {
-  padding-left: 15px;
+  padding-left: 8px;
   color: #000;
 }
 
-.contact_info_items ul li i {
+.contact_info_items ul li svg {
   color: #000;
+  vertical-align: -5px;
 }
 
 .contact_info_items ul li.website {
